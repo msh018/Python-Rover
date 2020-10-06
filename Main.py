@@ -4,6 +4,7 @@ import Window
 import tkinter as tk
 from PIL import Image, ImageTk
 def main():
+    #The commented code is used for the original run using text files for input and output
     """
     path = os.getcwd()
     f = open(path + "\\Text\\instructions.txt", 'r')
@@ -35,6 +36,8 @@ def main():
         #after instructions are exhausted, write the final position to file
         rover.writePositionToFile()
     """
+
+    #Base gui runtime, view window.py for full gui code
     root = tk.Tk()
     window = Window.Window(root)
     window.getWindow().mainloop()
